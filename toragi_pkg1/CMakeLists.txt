@@ -135,6 +135,7 @@ include_directories(
 # add_executable(${PROJECT_NAME}_node src/toragi_pkg1_node.cpp)
 add_executable(node1 src/node1.cpp)
 add_executable(node2 src/node2.cpp)
+add_executable(node3 src/node3.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -152,6 +153,7 @@ add_executable(node2 src/node2.cpp)
 # )
 target_link_libraries(node1 ${catkin_LIBRARIES})
 target_link_libraries(node2 ${catkin_LIBRARIES})
+target_link_libraries(node3 ${catkin_LIBRARIES})
 
 #############
 ## Install ##
