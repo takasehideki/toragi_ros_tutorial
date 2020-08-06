@@ -133,6 +133,8 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/toragi_pkg1_node.cpp)
+add_executable(node1 src/node1.cpp)
+add_executable(node2 src/node2.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -148,6 +150,8 @@ include_directories(
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
+target_link_libraries(node1 ${catkin_LIBRARIES})
+target_link_libraries(node2 ${catkin_LIBRARIES})
 
 #############
 ## Install ##
