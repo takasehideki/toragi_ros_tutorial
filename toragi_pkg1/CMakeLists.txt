@@ -135,6 +135,7 @@ include_directories(
 add_executable(node1 src/node1.cpp)
 add_executable(node2 src/node2.cpp)
 add_executable(node3 src/node3.cpp)
+add_executable(node5 src/node5.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -153,6 +154,7 @@ add_executable(node3 src/node3.cpp)
 target_link_libraries(node1 ${catkin_LIBRARIES})
 target_link_libraries(node2 ${catkin_LIBRARIES})
 target_link_libraries(node3 ${catkin_LIBRARIES})
+target_link_libraries(node5 ${catkin_LIBRARIES})
 
 #############
 ## Install ##
