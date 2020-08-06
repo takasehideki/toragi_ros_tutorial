@@ -1,0 +1,16 @@
+<launch>
+  <node pkg="toragi_pkg1" type="node1" name="node1" output="screen" />
+  <node pkg="toragi_pkg1" type="node2" name="node2" output="screen" />
+  <node pkg="toragi_pkg1" type="node3" name="node3" output="screen" />
+  <node pkg="toragi_pkg1" type="node2" name="node4" output="screen">
+    <remap from="topic1" to="topic2" />
+  </node>
+  <node pkg="toragi_pkg1" type="node5" name="node5" output="screen" />
+  <node pkg="toragi_pkg2" type="node6" name="node6" output="screen" />
+  <node pkg="roscpp_tutorials" type="talker" name="talker" output="screen">
+    <remap from="chatter" to="topic1" />
+  </node>
+  <node pkg="roscpp_tutorials" type="listener" name="listener" output="screen">
+    <remap from="chatter" to="topic1" />
+  </node>
+</launch>
